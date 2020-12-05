@@ -5,9 +5,11 @@ const ColorList = ({ colorList }) => {
 	const colorListJSX = colorList.map((color, index) => {
 		return (
 			<Color 
-				color={color.rgb} 
+				index={index} 
 				key={index} 
-				weight={color.weight}
+				rgb={color.rgb} 
+				hex={color.hex}
+				weight={color.weight} 
 			/>
 		)
 	});

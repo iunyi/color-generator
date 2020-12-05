@@ -3,7 +3,7 @@ import Input from './Input';
 import Title from './Title';
 import ColorList from './ColorList';
 import Values from 'values.js';
-import '../stylesheets/App.css';
+import '../stylesheets/components/App.scss';
 
 const App = () => {
 	const [color, setColor] = useState('');
@@ -40,7 +40,9 @@ const App = () => {
 				/>
 			</header>
 			<main>
-				<ColorList colorList={colorList} />
+				<section className="color-list">
+					<ColorList colorList={colorList} />
+				</section>
 			</main>
 		</div>
   );
