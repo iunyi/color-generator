@@ -1,11 +1,18 @@
 import React from 'react';
 
-const Color = () => {
+const Color = ({ color, index, weight }) => {
+    const colorRGB = color.join(',');
+
     return (
-        <div>
-            
+        <div 
+            key={index} 
+            className="color" 
+            style={{backgroundColor:`rgb(${colorRGB})`}}
+        >
+            <p>{color}</p>
+            <p>{weight}%</p>
         </div>
     )
-}
+};
 
 export default Color;

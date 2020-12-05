@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Input = (props) => {
+const Input = ({handleSubmit, value, handleChange, className}) => {
     return (
-        <section>
-            <form onSubmit={props.handleSubmit}>
+        <section className="input">
+            <form onSubmit={handleSubmit}>
                 <input 
-                    value={props.value} 
-                    onChange={props.handleChange} 
-                    className={props.className} 
+                    value={value} 
+                    onChange={handleChange} 
+                    className={className} 
                     autoFocus
                 />
                 <button>Search</button>
