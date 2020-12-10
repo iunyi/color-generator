@@ -18,4 +18,3 @@ const ColorList = ({ colorList }) => {
 };
 
 export default ColorList;
-// indent size
