@@ -1,0 +1,32 @@
+.input {
+  height: 10vh;
+
+  input {
+    color: $color-neutral-2;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    color: $color-neutral-1;
+
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      color: $color-neutral-2;
+    }
+  }
+}
+
+.default {
+  border: none;
+  border-bottom: 2px solid $color-neutral-1;
+}
+
+.error {
+  border: none;
+  border-bottom: 2px solid $color-error;
+}

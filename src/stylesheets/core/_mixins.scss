@@ -1,0 +1,25 @@
+// Flexbox
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Devices
+@mixin small_devices {
+  @media all and (min-width: $small-devices) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media all and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: $desktop) {
+    @content;
+  }
+}
